@@ -1,20 +1,31 @@
-class Studentas {
-    // realizacija
-    private:
-      std::string vardas_;
-      std::string pavarde_;
-      double egzaminas_;
-      std::vector<double> nd_;
-    // interfeisas
-    public:
-      Studentas() : egzaminas_(0) { }  // default konstruktorius
-      Studentas(std::istream& is);
-      inline std::string vardas() const { return vardas_; }    // get'eriai, inline
-      inline std::string pavarde() const { return pavarde_; }  // get'eriai, inline
-      double galBalas(double (*) (vector<double>) = mediana) const;  // get'eriai
-      std::istream& readStudent(std::istream&);  // set'eriai
-    };
-    
-    bool compare(const Studentas&, const Studentas&);
-    bool comparePagalPavarde(const Studentas&, const Studentas&);
-    bool comparePagalEgza(const Studentas&, const Studentas&);
+#include "mano_lib.h"
+class Stud
+{
+private:
+    string vardas;
+    string pavarde;
+    double egzaminas;
+    vector<int> nd;
+    double galutinisSuVidurkiu;
+    double galutinisSuMediana;
+
+public:
+    Stud() : vardas(""), pavarde(""), egzaminas(0), nd{}, galutinisSuVidurkiu(0), galutinisSuMediana(0) {} // konstruktorius
+    ~Stud() {}
+    // setteriai
+    void setVardas(const string &var) { vardas = var; };
+    void setPavarde(const string &pav) { pavarde = pav; };
+    void setEgzaminas(const double &egz) { egzaminas = egz; };
+    void setND(const vector<int> &nd_) { nd = nd_; };
+    void setPazymys(const int &paz) { nd.push_back(paz); };
+    void setGalutinisSuVidurkiu(const double &vid) { galutinisSuVidurkiu = vid; };
+    void setGalutinisSuMediana(const double &med) { galutinisSuMediana = med; };
+    // getteriai
+    const string getVardas() const { return vardas; };
+    const string getPavarde() const { return pavarde; };
+    const double getEgzaminas() const { return egzaminas; };
+    vector<int> getND() const { return nd; };
+    int getPazymys(int &i) const { return nd.at(i); };
+    double getGalutinisSuVidurkiu() const { return galutinisSuVidurkiu; };
+    double getGalutinisSuMediana() const { return galutinisSuMediana; };
+};
