@@ -20,8 +20,8 @@ void ivedimas(Container &studentai, int &meniuPasirinkimas)
             vardoGeneravimas(laik);
             pazymiuGeneravimas(laik);
         }
-        laik.galutinisSuVidurkiu = (vidurkis(laik.nd) * 0.4) + (laik.egz * 0.6);
-        laik.galutinisSuMediana = (mediana(laik.nd) * 0.4) + (laik.egz * 0.6);
+        laik.setGalutinisSuVidurkiu((vidurkis(laik.getND()) * 0.4) + (laik.getEgzaminas() * 0.6));
+        laik.setGalutinisSuMediana((mediana(laik.getND()) * 0.4) + (laik.getEgzaminas() * 0.6));
         studentai.push_back(laik);
         while (true)
         {
@@ -107,12 +107,12 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
             is >> vardas >> pavarde;
             laikStudentas.setVardas(vardas);
             laikStudentas.setPavarde(pavarde);
-            studentas.nd.clear();
+            laikStudentas.getND().clear();
             while (is >> skaicius)
             {
                 laikStudentas.setPazymys(skaicius);
             }
-            laikStudentass.setEgzaminas(laikStudentas.getND().back());
+            laikStudentas.setEgzaminas(laikStudentas.getND().back());
             laikStudentas.getND().pop_back();
             laikStudentas.setGalutinisSuVidurkiu((vidurkis(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
             laikStudentas.setGalutinisSuMediana((mediana(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
