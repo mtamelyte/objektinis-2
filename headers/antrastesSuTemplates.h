@@ -92,28 +92,31 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
         else
             break;
     }
-
+    Stud laikStudentas;
     studentai.clear();
     int skaicius;
     bool pirmaEilute = true;
     for (string a : laik)
+        string vardas, pavarde;
     {
         istringstream is(a);
         if (pirmaEilute == true)
             pirmaEilute = false;
         else
         {
-            is >> studentas.vardas >> studentas.pavarde;
+            is >> vardas >> pavarde;
+            laikStudentas.setVardas(vardas);
+            laikStudentas.setPavarde(pavarde);
             studentas.nd.clear();
             while (is >> skaicius)
             {
-                studentas.nd.push_back(skaicius);
+                laikStudentas.setPazymys(skaicius);
             }
-            studentas.egz = studentas.nd.back();
-            studentas.nd.pop_back();
-            studentas.galutinisSuVidurkiu = (vidurkis(studentas.nd) * 0.4) + (studentas.egz * 0.6);
-            studentas.galutinisSuMediana = (mediana(studentas.nd) * 0.4) + (studentas.egz * 0.6);
-            studentai.push_back(studentas);
+            laikStudentass.setEgzaminas(laikStudentas.getND().back());
+            laikStudentas.getND().pop_back();
+            laikStudentas.setGalutinisSuVidurkiu((vidurkis(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
+            laikStudentas.setGalutinisSuMediana((mediana(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
+            studentai.push_back(laikStudentas);
         }
     }
 }
@@ -130,12 +133,12 @@ void isvedimas(Container &studentai, int galutinioBaloPasirinkimas, ostream &isv
     buferis << "--------------------------------------------------------------" << endl;
     for (Stud i : studentai)
     {
-        buferis << setw(16) << i.vardas;
-        buferis << setw(16) << i.pavarde;
+        buferis << setw(16) << i.getVardas();
+        buferis << setw(16) << i.getPavarde();
         if (galutinioBaloPasirinkimas == 1)
-            buferis << setw(20) << fixed << setprecision(2) << i.galutinisSuVidurkiu << endl;
+            buferis << setw(20) << fixed << setprecision(2) << i.getGalutinisSuVidurkiu() << endl;
         else
-            buferis << setw(20) << fixed << setprecision(2) << i.galutinisSuMediana << endl;
+            buferis << setw(20) << fixed << setprecision(2) << i.getGalutinisSuMediana() << endl;
     }
     isvedimoBudas << buferis.rdbuf();
     studentai.clear();
@@ -305,14 +308,14 @@ void pirmaStrategija(Container &studentai, Container &protingi, Container &nepro
     {
         if (galutinisBalas == 1)
         {
-            if (s.galutinisSuVidurkiu >= 5)
+            if (s.getGalutinisSuVidurkiu() >= 5)
                 protingi.push_back(s);
             else
                 neprotingi.push_back(s);
         }
         else
         {
-            if (s.galutinisSuMediana >= 5)
+            if (s.getGalutinisSuMediana() >= 5)
                 protingi.push_back(s);
             else
                 neprotingi.push_back(s);
@@ -328,11 +331,11 @@ void pirmaStrategija(Container &studentai, Container &protingi, Container &nepro
 template <typename Container>
 void antraStrategija(Container &studentai, Container &neprotingi)
 {
-    while (studentai.back().galutinisSuVidurkiu < 5)
-        {
-            neprotingi.push_back(studentai.back());
-            studentai.pop_back();
-        }
+    while (studentai.back().getGalutinisSuVidurkiu() < 5)
+    {
+        neprotingi.push_back(studentai.back());
+        studentai.pop_back();
+    }
     if constexpr (std::is_same_v<Container, vector<Stud>>)
     {
         neprotingi.shrink_to_fit();
@@ -344,7 +347,7 @@ template <typename Container>
 void treciaStrategija(Container &studentai, Container &neprotingi)
 {
     auto it = stable_partition(studentai.begin(), studentai.end(), [](Stud &a)
-                               { return a.galutinisSuVidurkiu >= 5; });
+                            { return a.getGalutinisSuVidurkiu() >= 5; });
     neprotingi.assign(it, studentai.end());
     studentai.resize(std::distance(studentai.begin(), it));
     if constexpr (std::is_same_v<Container, vector<Stud>>)
