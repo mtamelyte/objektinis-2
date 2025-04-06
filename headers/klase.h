@@ -28,4 +28,4 @@ public:
     int getPazymys(int &i) const { return nd.at(i); };
     double getGalutinisSuVidurkiu() const { return galutinisSuVidurkiu; };
     double getGalutinisSuMediana() const { return galutinisSuMediana; };
-}
+};

@@ -96,8 +96,8 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
     int skaicius;
     bool pirmaEilute = true;
     for (string a : laik)
-        string vardas, pavarde;
     {
+        string vardas, pavarde;
         istringstream is(a);
         Stud laikStudentas;
         if (pirmaEilute == true)

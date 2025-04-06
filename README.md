@@ -33,6 +33,15 @@ Testavimui naudojamo kompiuterio specifikacijos:
 | HDD        | SSD                           |
 | RAM        | SK Hynix 4GB x 8              |
 
+
+ # Klasės
+ |Optimizavimo vėliavėlė| Greitis su 1 000 000 | Greitis su 10 000 000 | .exe failo dydis |
+ |----------------------|----------------------|-----------------------|------------------|
+ | Jokios               | 5.84706 s.           | 56.911 s.             | 809 KB           |
+ | -O1                  | 3.16147 s.           | 25.9673 s.            | 537 KB           |
+ | -O2                  | 3.13472 s.           | 25.5726 s.            | 483 KB           |
+ | -O3                  | 3.08247 s.           | 26.015 s.             | 479 KB           |
+
 # Tyrimas su vektoriais:
 
 
