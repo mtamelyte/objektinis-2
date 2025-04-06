@@ -92,7 +92,6 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
         else
             break;
     }
-    Stud laikStudentas;
     studentai.clear();
     int skaicius;
     bool pirmaEilute = true;
@@ -100,6 +99,7 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
         string vardas, pavarde;
     {
         istringstream is(a);
+        Stud laikStudentas;
         if (pirmaEilute == true)
             pirmaEilute = false;
         else
@@ -107,7 +107,6 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
             is >> vardas >> pavarde;
             laikStudentas.setVardas(vardas);
             laikStudentas.setPavarde(pavarde);
-            laikStudentas.getND().clear();
             while (is >> skaicius)
             {
                 laikStudentas.setPazymys(skaicius);
@@ -116,7 +115,7 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
             laikStudentas.getND().pop_back();
             laikStudentas.setGalutinisSuVidurkiu((vidurkis(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
             laikStudentas.setGalutinisSuMediana((mediana(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
-            studentai.push_back(laikStudentas);
+            studentai.push_back(std::move(laikStudentas));
         }
     }
 }

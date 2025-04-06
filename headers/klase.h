@@ -2,10 +2,10 @@
 class Stud
 {
 private:
-    std::string vardas;
-    std::string pavarde;
+    string vardas;
+    string pavarde;
     double egzaminas;
-    std::vector<int> nd;
+    vector<int> nd;
     double galutinisSuVidurkiu;
     double galutinisSuMediana;
 
@@ -21,11 +21,11 @@ public:
     void setGalutinisSuVidurkiu(const double &vid) { galutinisSuVidurkiu = vid; };
     void setGalutinisSuMediana(const double &med) { galutinisSuMediana = med; };
     // getteriai
-    string getVardas() const { return vardas; };
-    string getPavarde() const { return pavarde; };
-    double getEgzaminas() const { return egzaminas; };
-    vector<int> getND() const { return nd ;};
-     int getPazymys(int &i) const { return nd.at(i); };
+    const string getVardas() const { return vardas; };
+    const string getPavarde() const { return pavarde; };
+    const double getEgzaminas() const { return egzaminas; };
+    vector<int> getND() const { return nd; };
+    int getPazymys(int &i) const { return nd.at(i); };
     double getGalutinisSuVidurkiu() const { return galutinisSuVidurkiu; };
     double getGalutinisSuMediana() const { return galutinisSuMediana; };
 }
