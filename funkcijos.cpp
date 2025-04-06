@@ -1,16 +1,16 @@
 #include "headers/antrastesSuTemplates.h"
-#include "headers/antrastesBeTemplates.h"
 
 void vardoIvedimas(Stud &laik)
 {
+    string var, pav;
     while (true)
     {
         try
         {
             cout << "Įveskite studento vardą: ";
-            cin >> laik.vardas;
+            cin >> var;
             bool blogasIvedimas = false;
-            for (char c : laik.vardas)
+            for (char c : var)
             {
                 if (!isalpha(c))
                     blogasIvedimas = true;
@@ -21,8 +21,10 @@ void vardoIvedimas(Stud &laik)
                 cin.clear();
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
-            else
+            else{
+                laik.setVardas(var);
                 break;
+            }
         }
         catch (const char *e)
         {
@@ -35,9 +37,9 @@ void vardoIvedimas(Stud &laik)
         try
         {
             cout << "Įveskite studento pavardę: ";
-            cin >> laik.pavarde;
+            cin >> pav;
             bool blogasIvedimas = false;
-            for (char c : laik.pavarde)
+            for (char c : pav)
             {
                 if (!isalpha(c))
                     blogasIvedimas = true;
@@ -49,7 +51,10 @@ void vardoIvedimas(Stud &laik)
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
             else
+            {
+                laik.setPavarde(pav);
                 break;
+            }
         }
         catch (const char *e)
         {
@@ -68,17 +73,20 @@ void pazymiuIvedimas(Stud &laik)
         try
         {
             cout << "Įveskite studento egzamino rezultatą: ";
-            cin >> laik.egz;
+            cin >> pazymys;
             if (cin.fail())
             {
                 cin.clear();
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 throw "Įvedėte ne skaičių!";
             }
-            else if (laik.egz < 1 || laik.egz > 10)
+            else if (pazymys < 1 || pazymys > 10)
                 throw "Įvedėte netinkamą skaičių!";
             else
+            {
+                laik.setEgzaminas(pazymys);
                 break;
+            }
         }
         catch (const char *e)
         {
@@ -111,7 +119,7 @@ void pazymiuIvedimas(Stud &laik)
                 continue;
             }
         }
-        laik.nd.push_back(pazymys);
+        laik.setPazymys(pazymys);
         while (true)
         {
             try
@@ -144,49 +152,54 @@ void pazymiuIvedimas(Stud &laik)
 
 void vardoGeneravimas(Stud &laik)
 {
+    std::mt19937 mt(static_cast<long unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()));
+    std::uniform_int_distribution<int> numeris(0, 15);
+    std::uniform_int_distribution<int> lytis(0, 1);
     string motVardas[] = {"Monika", "Auguste", "Astrida", "Nika", "Liveta", "Juste", "Beatrice", "Egle", "Emile", "Vanesa", "Anastasija", "Gabija", "Migle", "Neda", "Teja", "Vasare"};
     string motPavarde[] = {"Tamelyte", "Tumaite", "Jablonskyte", "Bukolovaite", "Ruskute", "Vaitkeviciute", "Rokaite", "Gurklyte", "Kesaite", "Balsyte", "Fedorenko", "Kameneckaite", "Cincikaite", "Davidaviciute", "Tupinyte", "Milkovaite"};
     string vyrVardas[] = {"Adomas", "Andrius", "Arnas", "Benediktas", "Dominykas", "Emilis", "Gabrielius", "Gustavas", "Ignas", "Julius", "Justas", "Karolis", "Kristijonas", "Kristupas", "Marijus", "Martynas"};
     string vyrPavarde[] = {"Lukosevicius", "Rakauskas", "Matuolis", "Juozapavicius", "Pronskus", "Slabada", "Rutkauskas", "Marcinkevicius", "Volodko", "Truksinas", "Andrulevicius", "Narbutis", "Pocius", "Arifovas", "Kuprys", "Simanavicius"};
-    if (rand() % 2 != 0)
+    if (lytis(mt))
     {
-        laik.vardas = vyrVardas[rand() % 16];
-        laik.pavarde = vyrPavarde[rand() % 16];
+        laik.setVardas(vyrVardas[numeris(mt)]);
+        laik.setPavarde(vyrPavarde[numeris(mt)]);
     }
     else
     {
-        laik.vardas = motVardas[rand() % 16];
-        laik.pavarde = motPavarde[rand() % 16];
+        laik.setVardas(motVardas[numeris(mt)]);
+         laik.setPavarde(motPavarde[numeris(mt)]);
     }
 }
 
 void pazymiuGeneravimas(Stud &laik)
 {
-    laik.egz = (rand() % 10) + 1;
-    for (int i = 0; i < rand() + 1; i++)
+    std::mt19937 mt(static_cast<long unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()));
+    std::uniform_int_distribution<int> pazymys(1, 10);
+    laik.setEgzaminas(pazymys(mt));
+    for (int i = 0; i < pazymys(mt); i++)
     {
-        laik.nd.push_back((rand() % 10) + 1);
+        laik.setPazymys(pazymys(mt));
     }
 }
 
 bool pagalVarda(Stud &a, Stud &b)
 {
-    return a.vardas < b.vardas;
+    return a.getVardas() < b.getVardas();
 }
 
 bool pagalPavarde(Stud &a, Stud &b)
 {
-    return b.pavarde > a.pavarde;
+    return b.getPavarde() > a.getPavarde();
 }
 
 bool pagalVidurki(Stud &a, Stud &b)
 {
-    return b.galutinisSuVidurkiu < a.galutinisSuVidurkiu;
+    return b.getGalutinisSuVidurkiu() < a.getGalutinisSuVidurkiu();
 }
 
 bool pagalMediana(Stud &a, Stud &b)
 {
-    return b.galutinisSuMediana < a.galutinisSuMediana;
+    return b.getGalutinisSuMediana() < a.getGalutinisSuMediana();
 }
 
 void testas(string failoPavadinimas)

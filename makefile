@@ -1,5 +1,5 @@
 main: funkcijos.o
-	g++ -o main main.cpp funkcijos.o
+	g++ -O3 -o main main.cpp funkcijos.o
 
 funkcijos: 
 	g++ funkcijos.cpp
@@ -7,5 +7,5 @@ funkcijos:
 run: main
 	./main.exe
 
-clean:
+clean: 
 	del *.o main.exe

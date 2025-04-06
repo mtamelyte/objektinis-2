@@ -1,5 +1,4 @@
 #include "headers/antrastesSuTemplates.h"
-#include "headers/antrastesBeTemplates.h"
 
 int main()
 {

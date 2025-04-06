@@ -21,16 +21,7 @@ using std::ofstream;
 using std::ostringstream;
 using std::runtime_error;
 using std::ostream;
+using std::istream;
 using std::to_string;
 using std::list;
 using std::deque;
-using std::find;
-
-struct Stud
-{
-    string vardas, pavarde;
-    vector<int> nd;
-    int egz;
-    double galutinisSuVidurkiu;
-    double galutinisSuMediana;
-};
