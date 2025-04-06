@@ -43,6 +43,8 @@ Testavimui naudojamo kompiuterio specifikacijos:
  | -O3                  | 3.08247 s.           | 26.015 s.             | 479 KB           |
 
  # Struktūros
+ |Optimizavimo vėliavėlė| Greitis su 1 000 000 | Greitis su 10 000 000 | .exe failo dydis |
+ |----------------------|----------------------|-----------------------|------------------|
  | Jokios               | 3.78072 s.           | 35.718 s.             | 636 KB           |
  | -O1                  | 2.21382 s.           | 17.4614 s.            | 457 KB           |
  | -O2                  | 2.36059 s.           | 15.5916 s.            | 437 KB           |
