@@ -1,20 +1,23 @@
-class Studentas {
-    // realizacija
-    private:
-      std::string vardas_;
-      std::string pavarde_;
-      double egzaminas_;
-      std::vector<double> nd_;
-    // interfeisas
-    public:
-      Studentas() : egzaminas_(0) { }  // default konstruktorius
-      Studentas(std::istream& is);
-      inline std::string vardas() const { return vardas_; }    // get'eriai, inline
-      inline std::string pavarde() const { return pavarde_; }  // get'eriai, inline
-      double galBalas(double (*) (vector<double>) = mediana) const;  // get'eriai
-      std::istream& readStudent(std::istream&);  // set'eriai
-    };
-    
-    bool compare(const Studentas&, const Studentas&);
-    bool comparePagalPavarde(const Studentas&, const Studentas&);
-    bool comparePagalEgza(const Studentas&, const Studentas&);
+#include "mano_lib.h"
+ class Stud
+ {
+ private:
+     std::string vardas;
+     std::string pavarde;
+     double egzaminas;
+     std::vector<double> nd;
+ 
+ public:
+     Stud() : var(""), pav(""), egz(0), nd{} {} // konstruktorius
+     ~Stud {}                                   // destruktorius
+     // setteriai
+     void setVardas(const string &var) { vardas = var };
+     void setPavarde(const string &pav) { pavarde = pav };
+     void setEgzaminas(const double &egz) { egzaminas = egz };
+     void setND(const vector <double> & nd_) { nd=nd_};
+     //getteriai
+     string getVardas() const { return vardas };
+     string getPavarde() const { return pavarde };
+     double getEgzaminas () const {return egzaminas };
+     vector <double> getND () const { return nd} ;
+ };
