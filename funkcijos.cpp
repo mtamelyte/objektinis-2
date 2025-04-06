@@ -74,17 +74,20 @@ void pazymiuIvedimas(Stud &laik)
         try
         {
             cout << "Įveskite studento egzamino rezultatą: ";
-            cin >> laik.egz;
+            cin >> pazymys;
             if (cin.fail())
             {
                 cin.clear();
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 throw "Įvedėte ne skaičių!";
             }
-            else if (laik.egz < 1 || laik.egz > 10)
+            else if (pazymys < 1 || pazymys > 10)
                 throw "Įvedėte netinkamą skaičių!";
             else
+            {
+                laik.setEgzaminas(pazymys);
                 break;
+            }
         }
         catch (const char *e)
         {
@@ -117,7 +120,7 @@ void pazymiuIvedimas(Stud &laik)
                 continue;
             }
         }
-        laik.nd.push_back(pazymys);
+        laik.setPazymys(pazymys);
         while (true)
         {
             try
