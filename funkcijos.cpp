@@ -3,14 +3,15 @@
 
 void vardoIvedimas(Stud &laik)
 {
+    string var, pav;
     while (true)
     {
         try
         {
             cout << "Įveskite studento vardą: ";
-            cin >> laik.vardas;
+            cin >> var;
             bool blogasIvedimas = false;
-            for (char c : laik.vardas)
+            for (char c : var)
             {
                 if (!isalpha(c))
                     blogasIvedimas = true;
@@ -21,8 +22,10 @@ void vardoIvedimas(Stud &laik)
                 cin.clear();
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
-            else
+            else{
+                laik.setVardas(var);
                 break;
+            }
         }
         catch (const char *e)
         {
@@ -35,9 +38,9 @@ void vardoIvedimas(Stud &laik)
         try
         {
             cout << "Įveskite studento pavardę: ";
-            cin >> laik.pavarde;
+            cin >> pav;
             bool blogasIvedimas = false;
-            for (char c : laik.pavarde)
+            for (char c : pav)
             {
                 if (!isalpha(c))
                     blogasIvedimas = true;
@@ -49,7 +52,10 @@ void vardoIvedimas(Stud &laik)
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
             else
+            {
+                laik.setPavarde(pav);
                 break;
+            }
         }
         catch (const char *e)
         {
