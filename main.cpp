@@ -1,6 +1,6 @@
 #include "headers/antrastesSuTemplates.h"
 #include "headers/antrastesBeTemplates.h"
-#include "klase.h"
+#include "headers/klase.h"
 
 int main()
 {

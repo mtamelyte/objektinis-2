@@ -1,5 +1,6 @@
 #include "mano_lib.h"
 #include "antrastesBeTemplates.h"
+#include "klase.h"
 
 template <typename Container>
 void ivedimas(Container &studentai, int &meniuPasirinkimas)
