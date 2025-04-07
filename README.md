@@ -35,20 +35,20 @@ Testavimui naudojamo kompiuterio specifikacijos:
 
 
  # Klasės
- |Optimizavimo vėliavėlė| Greitis su 1 000 000 | Greitis su 10 000 000 | .exe failo dydis |
+ |Optimizavimo vėliavėlė| Greitis su 100 000   | Greitis su 1 000 000  | .exe failo dydis |
  |----------------------|----------------------|-----------------------|------------------|
- | Jokios               | 5.84706 s.           | 56.911 s.             | 809 KB           |
- | -O1                  | 3.16147 s.           | 25.9673 s.            | 537 KB           |
- | -O2                  | 3.13472 s.           | 25.5726 s.            | 483 KB           |
- | -O3                  | 3.08247 s.           | 26.015 s.             | 479 KB           |
+ | Jokios               | 1.12708 s.           | 8.48943 s.            | 809 KB           |
+ | -O1                  | 0.708478 s.          | 5.06565 s.            | 537 KB           |
+ | -O2                  | 0.693832 s.          | 4.76938 s.            | 483 KB           |
+ | -O3                  | 0.669088 s.          | 4.57423 s.            | 479 KB           |
 
  # Struktūros
- |Optimizavimo vėliavėlė| Greitis su 1 000 000 | Greitis su 10 000 000 | .exe failo dydis |
+ |Optimizavimo vėliavėlė| Greitis su 100 000   | Greitis su 1 000 000  | .exe failo dydis |
  |----------------------|----------------------|-----------------------|------------------|
- | Jokios               | 3.78072 s.           | 35.718 s.             | 636 KB           |
- | -O1                  | 2.21382 s.           | 17.4614 s.            | 457 KB           |
- | -O2                  | 2.36059 s.           | 15.5916 s.            | 437 KB           |
- | -O3                  | 2.32766 s.           | 15.4088 s.            | 442 KB           |
+ | Jokios               | 0.705166 s.          | 5.59301 s.            | 636 KB           |
+ | -O1                  | 0.530952 s.          | 3.37178 s.            | 457 KB           |
+ | -O2                  | 0.451381 s.          | 3.50529 s.            | 437 KB           |
+ | -O3                  | 0.498676 s.          | 3.5854 s.             | 442 KB           |
 
 # Tyrimas su vektoriais:
 
