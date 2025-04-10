@@ -11,7 +11,15 @@ private:
 
 public:
     Stud() : vardas(""), pavarde(""), egzaminas(0), nd{}, galutinisSuVidurkiu(0), galutinisSuMediana(0) {} // konstruktorius
-    Stud( const Stud& kitas) : vardas(kitas.getVardas()), pavarde(kitas.getPavarde()), egzaminas(kitas.getEgzaminas()), nd{kitas.getND()}, galutinisSuVidurkiu(kitas.getGalutinisSuVidurkiu()), galutinisSuMediana(kitas.getGalutinisSuMediana()) {} 
+    Stud( const Stud & s) : vardas(s.vardas), pavarde(s.pavarde), egzaminas(s.egzaminas), nd{s.nd}, galutinisSuVidurkiu(s.galutinisSuVidurkiu), galutinisSuMediana(s.galutinisSuMediana) {} 
+    Stud & operator = (const Stud & s){
+        vardas=s.vardas;
+        pavarde=s.pavarde;
+        egzaminas=s.egzaminas;
+        nd=s.nd;
+        galutinisSuVidurkiu=s.galutinisSuVidurkiu;
+        galutinisSuMediana=s.galutinisSuMediana;
+    }
     ~Stud() {}
     // setteriai
     void setVardas(const string &var) { vardas = var; };
