@@ -19,6 +19,7 @@ public:
         nd=s.nd;
         galutinisSuVidurkiu=s.galutinisSuVidurkiu;
         galutinisSuMediana=s.galutinisSuMediana;
+        return *this;
     }
     ~Stud() {}
     // setteriai
