@@ -386,3 +386,31 @@ double mediana(vector <int> nd)
     else
         return nd[floor(nd.size() / 2)];
 }
+
+void constructorTestas()
+{
+    Stud studentas1, studentas2;
+    if(studentas1.studentuPalyginimas(studentas2)) {
+        cout << "Default constructor veikia" << endl;
+    }
+}
+
+void copyConstructorTestas(){
+    Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
+    Stud studentas2(studentas1);
+    if(studentas1.studentuPalyginimas(studentas2)) {
+        cout << "Copy constructor veikia" << endl;
+    }
+}
+
+void copyAssignmentTestas(){
+
+}
+
+void moveConstructorTestas(){
+
+}
+
+void moveAssignmentTestas(){
+
+}

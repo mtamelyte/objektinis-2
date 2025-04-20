@@ -25,3 +25,4 @@ using std::istream;
 using std::to_string;
 using std::list;
 using std::deque;
+using std::move;

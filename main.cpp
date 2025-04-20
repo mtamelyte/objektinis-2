@@ -17,7 +17,8 @@ int main()
             cout << "4 - Nuskaityti duomenis iš failo" << endl;
             cout << "5 - Testuoti kodą ir išvesti 3 laikų vidurkį" << endl;
             cout << "6 - Tirti funkcijas" << endl;
-            cout << "7 - Baigti darbą" << endl;
+            cout << "7 - Tirti konstruktorius" << endl;
+            cout << "8 - Baigti darbą" << endl;
             cin >> meniuPasirinkimas;
             if (cin.fail())
             {
@@ -121,6 +122,14 @@ int main()
         }
     }
     case 7:
+    {
+        constructorTestas();
+        copyConstructorTestas();
+        copyAssignmentTestas();
+        moveConstructorTestas();
+        moveAssignmentTestas();
+    }
+    case 8:
     {
         return 0;
         break;

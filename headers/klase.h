@@ -11,17 +11,14 @@ private:
 
 public:
     Stud() : vardas(""), pavarde(""), egzaminas(0), nd{}, galutinisSuVidurkiu(0), galutinisSuMediana(0) {} // konstruktorius
-    Stud( const Stud & s) : vardas(s.vardas), pavarde(s.pavarde), egzaminas(s.egzaminas), nd{s.nd}, galutinisSuVidurkiu(s.galutinisSuVidurkiu), galutinisSuMediana(s.galutinisSuMediana) {} 
-    Stud & operator = (const Stud & s){
-        vardas=s.vardas;
-        pavarde=s.pavarde;
-        egzaminas=s.egzaminas;
-        nd=s.nd;
-        galutinisSuVidurkiu=s.galutinisSuVidurkiu;
-        galutinisSuMediana=s.galutinisSuMediana;
-        return *this;
+    Stud( const string & var, const string & pav, const int & egz, const vector<int> & nd_) : vardas(var), pavarde(pav), egzaminas(egz), nd{nd_}, galutinisSuVidurkiu(0), galutinisSuMediana(0) {} // konstruktorius su inputu
+    Stud( const Stud & s);
+    Stud & operator = (const Stud & s);
+    Stud ( Stud&& s);
+    Stud & operator = (Stud && s);
+    ~Stud() {
+        nd.clear();
     }
-    ~Stud() {}
     // setteriai
     void setVardas(const string &var) { vardas = var; };
     void setPavarde(const string &pav) { pavarde = pav; };
@@ -38,4 +35,7 @@ public:
     int getPazymys(int &i) const { return nd.at(i); };
     double getGalutinisSuVidurkiu() const { return galutinisSuVidurkiu; };
     double getGalutinisSuMediana() const { return galutinisSuMediana; };
+
+    // papildomos funkcijos
+    bool studentuPalyginimas(const Stud & s);
 };
