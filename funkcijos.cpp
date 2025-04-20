@@ -404,13 +404,29 @@ void copyConstructorTestas(){
 }
 
 void copyAssignmentTestas(){
-
+    Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
+    Stud studentas2;
+    studentas2 = studentas1;
+    if(studentas1.studentuPalyginimas(studentas2)) {
+        cout << "Copy assignment operator veikia" << endl;
+    }
 }
 
 void moveConstructorTestas(){
-
+    Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
+    Stud testStudentas(studentas1);
+    Stud studentas2(move(studentas1));
+    if(testStudentas.studentuPalyginimas(studentas2)) {
+        cout << "Move constructor veikia" << endl;
+    }
 }
 
 void moveAssignmentTestas(){
-
+    Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
+    Stud testStudentas(studentas1);
+    Stud studentas2;
+    studentas2 = move(studentas1);
+    if(testStudentas.studentuPalyginimas(studentas2)) {
+        cout << "Move assignment operator veikia" << endl;
+    }
 }
