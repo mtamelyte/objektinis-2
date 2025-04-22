@@ -104,18 +104,8 @@ void nuskaitymasSuBuferiu(Container &studentai, string failoPavadinimas)
             pirmaEilute = false;
         else
         {
-            is >> vardas >> pavarde;
-            laikStudentas.setVardas(vardas);
-            laikStudentas.setPavarde(pavarde);
-            while (is >> skaicius)
-            {
-                laikStudentas.setPazymys(skaicius);
-            }
-            laikStudentas.setEgzaminas(laikStudentas.getND().back());
-            laikStudentas.getND().pop_back();
-            laikStudentas.setGalutinisSuVidurkiu((vidurkis(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
-            laikStudentas.setGalutinisSuMediana((mediana(laikStudentas.getND()) * 0.4) + (laikStudentas.getEgzaminas() * 0.6));
-            studentai.push_back(std::move(laikStudentas));
+            is >> laikStudentas;
+            studentai.push_back(move(laikStudentas));
         }
     }
 }
@@ -124,7 +114,7 @@ template <typename Container>
 void isvedimas(Container &studentai, int galutinioBaloPasirinkimas, ostream &isvedimoBudas)
 {
     stringstream buferis;
-    buferis << setw(12) << left << "Vardas" << setw(16) << "Pavardė";
+    buferis << setw(16) << left << "Vardas" << setw(16) << "Pavarde";
     if (galutinioBaloPasirinkimas == 1)
         buferis << setw(20) << "Galutinis (Vid.)" << endl;
     else
@@ -132,12 +122,7 @@ void isvedimas(Container &studentai, int galutinioBaloPasirinkimas, ostream &isv
     buferis << "--------------------------------------------------------------" << endl;
     for (Stud i : studentai)
     {
-        buferis << setw(16) << i.getVardas();
-        buferis << setw(16) << i.getPavarde();
-        if (galutinioBaloPasirinkimas == 1)
-            buferis << setw(20) << fixed << setprecision(2) << i.getGalutinisSuVidurkiu() << endl;
-        else
-            buferis << setw(20) << fixed << setprecision(2) << i.getGalutinisSuMediana() << endl;
+        buferis << i;
     }
     isvedimoBudas << buferis.rdbuf();
     studentai.clear();

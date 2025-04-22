@@ -19,8 +19,16 @@ Paleidus programą naudotojui parodomas meniu su 7 pasirinkimais:
 
 6 - Tirti funkcijas: suteikia galimybę atlikti du tyrimus: pirmas tyrimas sugeneruoja kelis skirtingų dydžių studentų failus ir parodo generavimo trukmę, o antras tyrimas perskaito sugeneruotus studentų failus ir ištiria jų nuskaitymo bei išskirstymo į protingus ir neprotingus studentus pagal pažymį spartą
 
-7 - Baigti darbą: Išjungia programą
+7 - Tirti konstruktorius: Ištestuoja visų studentų klasės konstruktorių ir perkrautų operatorių veikimą
 
+8 - Baigti darbą: Išjungia programą
+
+
+# v1.2
+
+Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti naujus objektus kopijuojant ar perkeliant senus. Taip pat yra perkrauti įvesties ir išvesties operatoriai - įvesties operatorius pritaikomas nuskaitant studentų duomenis iš failo, o išvesties operatorius pritaikomas išvedant studento vardą ir balą tiek į terminalą, tiek į failą. 
+
+Tiek konstruktoriai, tiek perkrauti operatoriai yra testuojami naujoje meniu funkcijoje, kuri gražina teiginius apie sėkmingą testavimą.
 
 # Programos testavimas naudojant 6 funkciją:
 
