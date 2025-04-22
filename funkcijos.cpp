@@ -430,3 +430,25 @@ void moveAssignmentTestas(){
         cout << "Move assignment operator veikia" << endl;
     }
 }
+
+void ivestiesTestas(){
+    istringstream ivestis("Monika Tamelyte 3 6 1 9 10 4 5");
+    Stud studentas;
+    ivestis >> studentas;
+    vector <int> testPaz={3, 6, 1, 9, 10, 4};
+    if(studentas.getVardas()=="Monika" && studentas.getPavarde()=="Tamelyte" && studentas.getND()==testPaz && studentas.getEgzaminas()==5)
+    {
+        cout << "Input operator veikia" << endl;
+    }
+}
+
+void isvestiesTestas(){
+    ostringstream isvestis, isvestisTest;
+    Stud studentas;
+    studentas.setVardas("Monika");
+    studentas.setPavarde("Tamelyte");
+    studentas.setGalutinisSuVidurkiu((vidurkis({3, 6, 1, 9, 10, 4}) * 0.4) + (5 * 0.6));
+    isvestisTest << setw(16) << "Monika" << setw(16) << "Tamelyte" << setw(20) << fixed << setprecision(2) << ((vidurkis({3, 6, 1, 9, 10, 4}) * 0.4) + (5 * 0.6)) << endl;
+    isvestis << studentas;
+    if(isvestis.str()==isvestisTest.str()) cout << "Output operator veikia" << endl;
+}

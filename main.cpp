@@ -128,6 +128,8 @@ int main()
         copyAssignmentTestas();
         moveConstructorTestas();
         moveAssignmentTestas();
+        ivestiesTestas();
+        isvestiesTestas();
     }
     case 8:
     {

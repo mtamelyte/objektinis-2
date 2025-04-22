@@ -19,3 +19,5 @@ void copyConstructorTestas();
 void copyAssignmentTestas();
 void moveConstructorTestas();
 void moveAssignmentTestas();
+void ivestiesTestas();
+void isvestiesTestas();

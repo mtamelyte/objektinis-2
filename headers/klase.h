@@ -19,6 +19,8 @@ public:
     ~Stud() {
         nd.clear();
     }
+    friend istream & operator >> ( istream & is, Stud & s );
+    friend ostream & operator << ( ostream & os, Stud & s );
     // setteriai
     void setVardas(const string &var) { vardas = var; };
     void setPavarde(const string &pav) { pavarde = pav; };
