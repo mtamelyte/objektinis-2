@@ -30,6 +30,9 @@ Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti na
 
 Tiek konstruktoriai, tiek perkrauti operatoriai yra testuojami naujoje meniu funkcijoje, kuri gražina teiginius apie sėkmingą testavimą.
 
+
+![Screenshot 2025-04-22 145335](https://github.com/user-attachments/assets/510a0439-b62c-4bad-aeec-b1f0889065e5)
+
 # Programos testavimas naudojant 6 funkciją:
 
 Prieš pirmą kartą atliekant antrą tyrimą, privaloma bent kartą atlikti pirmą, kad būtų sugeneruoti failai, su kuriais būtų galima atlikti antrą tyrimą.
