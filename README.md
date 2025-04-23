@@ -30,6 +30,9 @@ Programoje pridėta Žmogaus klasė, kurioje saugomas tik žmogaus vardas ir pav
 
 Taip pat Žmogaus klasė yra abstrakti, taigi jos tipo objektų sukurti negalima. 
 
+![Screenshot 2025-04-23 135004](https://github.com/user-attachments/assets/8d9d7c51-8cdd-4c00-85c0-b40ff3661fd3)
+
+
 # v1.2
 
 Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti naujus objektus kopijuojant ar perkeliant senus. Taip pat yra perkrauti įvesties ir išvesties operatoriai - įvesties operatorius pritaikomas nuskaitant studentų duomenis iš failo, o išvesties operatorius pritaikomas išvedant studento vardą ir balą tiek į terminalą, tiek į failą. 
