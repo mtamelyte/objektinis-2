@@ -24,6 +24,12 @@ Paleidus programą naudotojui parodomas meniu su 7 pasirinkimais:
 8 - Baigti darbą: Išjungia programą
 
 
+# v1.5 
+
+Programoje pridėta Žmogaus klasė, kurioje saugomas tik žmogaus vardas ir pavardė, o Studentų klasė sukurta jos pagrindu, taigi turi Žmogaus vardą ir pavardę, tačiau papildomai dar turi namų darbų ir egzamino pažymius. Visi ankstesni Studentų klasės metodai toliau su ja veikia taip pat, kaip ir anksčiau.
+
+Taip pat Žmogaus klasė yra abstrakti, taigi jos tipo objektų sukurti negalima. 
+
 # v1.2
 
 Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti naujus objektus kopijuojant ar perkeliant senus. Taip pat yra perkrauti įvesties ir išvesties operatoriai - įvesties operatorius pritaikomas nuskaitant studentų duomenis iš failo, o išvesties operatorius pritaikomas išvedant studento vardą ir balą tiek į terminalą, tiek į failą. 
