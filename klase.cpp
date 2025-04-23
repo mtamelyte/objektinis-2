@@ -53,6 +53,9 @@ istream & operator>>(istream &is, Stud & s)
     {
         s.nd.push_back(paz);
     }
+    if (s.nd.empty()) {
+        throw std::runtime_error("Nera pazymiu");
+    }
     s.egzaminas = s.nd.back();
     s.nd.pop_back();
     s.galutinisSuVidurkiu = (vidurkis(s.nd) * 0.4) + (s.egzaminas * 0.6);
