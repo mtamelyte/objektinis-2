@@ -8,7 +8,7 @@ class Zmogus
     public:
     Zmogus() : vardas(""), pavarde("") {} // konstruktorius
     Zmogus( const string & var, const string & pav ) : vardas(var), pavarde(pav) {} // konstruktorius su inputu
-    virtual ~Zmogus() {}
+    virtual ~Zmogus() = 0;
     // setteriai
     void setVardas(const string &var) { vardas = var; };
     void setPavarde(const string &pav) { pavarde = pav; };

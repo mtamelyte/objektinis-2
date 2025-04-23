@@ -121,6 +121,7 @@ int main()
             tyrimas(laikStudentai);
         }
     }
+    break;
     case 7:
     {
         constructorTestas();
@@ -131,6 +132,7 @@ int main()
         ivestiesTestas();
         isvestiesTestas();
     }
+    break;
     case 8:
     {
         return 0;
