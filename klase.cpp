@@ -44,6 +44,7 @@ bool Stud::studentuPalyginimas(const Stud &s)
     return lygus;
 }
 
+//input operatorius
 istream & operator>>(istream &is, Stud & s)
 {
     int paz;
@@ -59,6 +60,7 @@ istream & operator>>(istream &is, Stud & s)
     return is;
 }
 
+//output operatorius
 ostream & operator << ( ostream & os, Stud & s ){
     os << setw(16) << s.vardas << setw(16) << s.pavarde << setw(20) << fixed << setprecision(2) << s.galutinisSuVidurkiu << endl;
     return os;
