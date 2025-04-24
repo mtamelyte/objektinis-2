@@ -21,3 +21,4 @@ void moveConstructorTestas();
 void moveAssignmentTestas();
 void ivestiesTestas();
 void isvestiesTestas();
+void destruktoriausTestas();
