@@ -68,3 +68,5 @@ ostream & operator << ( ostream & os, Stud & s ){
     os << setw(16) << s.vardas << setw(16) << s.pavarde << setw(20) << fixed << setprecision(2) << s.galutinisSuVidurkiu << endl;
     return os;
 }
+
+Zmogus::~Zmogus() {}
