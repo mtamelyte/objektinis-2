@@ -17,6 +17,8 @@ public:
     Stud ( Stud&& s);
     Stud & operator = (Stud && s);
     ~Stud() {
+        vardas.clear();
+        pavarde.clear();
         nd.clear();
     }
     friend istream & operator >> ( istream & is, Stud & s );
