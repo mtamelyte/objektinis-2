@@ -130,6 +130,7 @@ int main()
         moveAssignmentTestas();
         ivestiesTestas();
         isvestiesTestas();
+        destruktoriausTestas();
     }
     case 8:
     {
