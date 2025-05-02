@@ -452,3 +452,11 @@ void isvestiesTestas(){
     isvestis << studentas;
     if(isvestis.str()==isvestisTest.str()) cout << "Output operator veikia" << endl;
 }
+
+
+void destruktoriausTestas(){
+    Stud jonas;
+    jonas.setVardas("Jonas");
+    jonas.~Stud();
+    if(jonas.getVardas()!="Jonas") cout << "Destruktorius veikia" << endl;
+}
