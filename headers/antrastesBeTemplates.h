@@ -1,3 +1,6 @@
+#ifndef ANTRASTESBETEMPLATES_H
+#define ANTRASTESBETEMPLATES_H
+
 #include "klase.h"
 void vardoIvedimas(Stud &laik);
 void pazymiuIvedimas(Stud &laik);
@@ -21,3 +24,6 @@ void moveConstructorTestas();
 void moveAssignmentTestas();
 void ivestiesTestas();
 void isvestiesTestas();
+void destruktoriausTestas();
+
+#endif

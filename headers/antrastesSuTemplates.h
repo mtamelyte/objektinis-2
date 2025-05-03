@@ -20,8 +20,6 @@ void ivedimas(Container &studentai, int &meniuPasirinkimas)
             vardoGeneravimas(laik);
             pazymiuGeneravimas(laik);
         }
-        laik.setGalutinisSuVidurkiu((vidurkis(laik.getND()) * 0.4) + (laik.getEgzaminas() * 0.6));
-        laik.setGalutinisSuMediana((mediana(laik.getND()) * 0.4) + (laik.getEgzaminas() * 0.6));
         studentai.push_back(laik);
         while (true)
         {

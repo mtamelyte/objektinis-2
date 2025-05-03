@@ -131,6 +131,7 @@ int main()
         moveAssignmentTestas();
         ivestiesTestas();
         isvestiesTestas();
+        destruktoriausTestas();
     }
     break;
     case 8:
