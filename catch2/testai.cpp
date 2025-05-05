@@ -35,33 +35,25 @@ TEST_CASE("Testuojamas move priskyrimo operatorius", "[Move][assignment][operato
     REQUIRE(studentas2==Stud("Monika", "Tamelyte", 10, {8, 9, 10}));
     REQUIRE(studentas1==Stud("", "", 0, {}));
 }
-/*
-void ivestiesTestas(){
-    istringstream ivestis("Monika Tamelyte 3 6 1 9 10 4 5");
+
+TEST_CASE("Testuojamas ivedimo operatorius", "[Input][operator]"){
+    istringstream ivestis("Monika Tamelyte 8 9 10 10");
     Stud studentas;
     ivestis >> studentas;
-    vector <int> testPaz={3, 6, 1, 9, 10, 4};
-    if(studentas.getVardas()=="Monika" && studentas.getPavarde()=="Tamelyte" && studentas.getND()==testPaz && studentas.getEgzaminas()==5)
-    {
-        cout << "Input operator veikia" << endl;
-    }
+    REQUIRE(studentas==Stud("Monika","Tamelyte", 10, {8, 9, 10}));
 }
 
-void isvestiesTestas(){
+TEST_CASE("Testuojamas isvedimo operatorius", "[Output][operator]"){
     ostringstream isvestis, isvestisTest;
-    Stud studentas;
-    studentas.setVardas("Monika");
-    studentas.setPavarde("Tamelyte");
-    studentas.setGalutinisSuVidurkiu((vidurkis({3, 6, 1, 9, 10, 4}) * 0.4) + (5 * 0.6));
-    isvestisTest << setw(16) << "Monika" << setw(16) << "Tamelyte" << setw(20) << fixed << setprecision(2) << ((vidurkis({3, 6, 1, 9, 10, 4}) * 0.4) + (5 * 0.6)) << endl;
+    Stud studentas("Monika", "Tamelyte", 10, {8, 9, 10});
+    isvestisTest << setw(16) << "Monika" << setw(16) << "Tamelyte" << setw(20) << fixed << setprecision(2) << ((vidurkis({8, 9, 10}) * 0.4) + (10 * 0.6)) << endl;
     isvestis << studentas;
-    if(isvestis.str()==isvestisTest.str()) cout << "Output operator veikia" << endl;
+    REQUIRE(isvestis.str()==isvestisTest.str());
 }
 
-
-void destruktoriausTestas(){
-    Stud jonas;
-    jonas.setVardas("Jonas");
-    jonas.~Stud();
-    if(jonas.getVardas()!="Jonas") cout << "Destruktorius veikia" << endl;
-}*/
+TEST_CASE("Testuojamas destruktorius", "[Destructor]"){
+    Stud *studentas= new Stud("Monika", "Tamelyte", 10, {8, 9, 10});
+    studentas->~Stud();
+    REQUIRE(studentas->getND().empty());
+    operator delete(studentas);
+}
