@@ -19,20 +19,20 @@ Stud &Stud::operator=(const Stud &s)
 }
 
 // move konstruktorius
-Stud::Stud(Stud &&s) : Zmogus((move(s.vardas)), (move(s.pavarde))), egzaminas(s.egzaminas), nd{move(s.nd)}, galutinisSuVidurkiu(move(s.galutinisSuVidurkiu)), galutinisSuMediana(move(s.galutinisSuMediana)) {}
+Stud::Stud(Stud &&s) : Zmogus(move(s)), egzaminas(s.egzaminas), nd{move(s.nd)}, galutinisSuVidurkiu(move(s.galutinisSuVidurkiu)), galutinisSuMediana(move(s.galutinisSuMediana)) {s.~Stud();}
 
 // move assignment operatorius
 Stud &Stud::operator=(Stud &&s)
 {
     if (this != &s)
     {
-        vardas = move(s.vardas);
-        pavarde = move(s.pavarde);
+        Zmogus::operator=(move(s));
         egzaminas = move(s.egzaminas);
         nd = move(s.nd);
         galutinisSuVidurkiu = move(s.galutinisSuVidurkiu);
         galutinisSuMediana = move(s.galutinisSuMediana);
     }
+    s.~Stud();
     return *this;
 }
 
@@ -61,4 +61,4 @@ ostream & operator << ( ostream & os, Stud & s ){
     return os;
 }
 
-Zmogus::~Zmogus() {}
+Zmogus::~Zmogus() { vardas=""; pavarde=""; }
