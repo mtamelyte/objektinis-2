@@ -426,8 +426,6 @@ void moveAssignmentTestas(){
     Stud testStudentas(studentas1);
     Stud studentas2;
     studentas2 = move(studentas1);
-    cout << studentas1 << endl;
-    cout << studentas2 << endl;
     if(testStudentas.studentuPalyginimas(studentas2) && !studentas1.studentuPalyginimas(studentas2)) {
         cout << "Move assignment operator veikia" << endl;
     }
@@ -454,6 +452,7 @@ void isvestiesTestas(){
     isvestis << studentas;
     if(isvestis.str()==isvestisTest.str()) cout << "Output operator veikia" << endl;
 }
+
 
 void destruktoriausTestas(){
     Stud jonas;
