@@ -36,14 +36,6 @@ Stud &Stud::operator=(Stud &&s)
     return *this;
 }
 
-bool Stud::studentuPalyginimas(const Stud &s)
-{
-    bool lygus = false;
-    if (vardas == s.vardas && pavarde == s.pavarde && egzaminas == s.egzaminas && nd == s.nd)
-        lygus = true;
-    return lygus;
-}
-
 //input operatorius
 istream & operator>>(istream &is, Stud & s)
 {

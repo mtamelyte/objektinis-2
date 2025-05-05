@@ -12,8 +12,6 @@ int rusiavimoPasirinkimas();
 string failoPasirinkimas(string klausimas);
 void failoGeneravimas(int failoIlgis);
 int galutinioBaloPasirinkimas();
-double vidurkis(vector <int> nd);
-double mediana(vector <int> nd);
 void constructorTestas();
 void copyConstructorTestas();
 void copyAssignmentTestas();

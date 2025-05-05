@@ -390,7 +390,7 @@ double mediana(vector <int> nd)
 void constructorTestas()
 {
     Stud studentas1, studentas2;
-    if(studentas1.studentuPalyginimas(studentas2)) {
+    if(studentas1==studentas2) {
         cout << "Default constructor veikia" << endl;
     }
 }
@@ -398,7 +398,7 @@ void constructorTestas()
 void copyConstructorTestas(){
     Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
     Stud studentas2(studentas1);
-    if(studentas1.studentuPalyginimas(studentas2)) {
+    if(studentas1==studentas2) {
         cout << "Copy constructor veikia" << endl;
     }
 }
@@ -407,7 +407,7 @@ void copyAssignmentTestas(){
     Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
     Stud studentas2;
     studentas2 = studentas1;
-    if(studentas1.studentuPalyginimas(studentas2)) {
+    if(studentas1==studentas2) {
         cout << "Copy assignment operator veikia" << endl;
     }
 }
@@ -416,7 +416,7 @@ void moveConstructorTestas(){
     Stud studentas1("Monika", "Tamelyte", 9, {2, 7, 10});
     Stud testStudentas(studentas1);
     Stud studentas2(move(studentas1));
-    if(testStudentas.studentuPalyginimas(studentas2) && !studentas1.studentuPalyginimas(studentas2)) {
+    if(testStudentas==studentas2 && studentas1!=studentas2) {
         cout << "Move constructor veikia" << endl;
     }
 }
@@ -426,7 +426,7 @@ void moveAssignmentTestas(){
     Stud testStudentas(studentas1);
     Stud studentas2;
     studentas2 = move(studentas1);
-    if(testStudentas.studentuPalyginimas(studentas2) && !studentas1.studentuPalyginimas(studentas2)) {
+    if(testStudentas==studentas2 && studentas1!=studentas2) {
         cout << "Move assignment operator veikia" << endl;
     }
 }

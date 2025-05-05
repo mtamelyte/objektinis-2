@@ -1,5 +1,6 @@
 #include "mano_lib.h"
-
+double vidurkis(vector <int> nd);
+double mediana(vector <int> nd);
 class Zmogus
 {
     protected:
@@ -26,7 +27,7 @@ private:
 
 public:
     Stud() : Zmogus("", ""), egzaminas(0), nd{}, galutinisSuVidurkiu(0), galutinisSuMediana(0) {} // konstruktorius
-    Stud( const string & var, const string & pav, const int & egz, const vector<int> & nd_) : Zmogus(var, pav), egzaminas(egz), nd{nd_}, galutinisSuVidurkiu(0), galutinisSuMediana(0) {} // konstruktorius su inputu
+    Stud( const string & var, const string & pav, const int & egz, const vector<int> & nd_) : Zmogus(var, pav), egzaminas(egz), nd{nd_}, galutinisSuVidurkiu((vidurkis(nd_) * 0.4) + (egz * 0.6)), galutinisSuMediana((mediana(nd_) * 0.4) + (egz * 0.6)) {} // konstruktorius su inputu
     Stud( const Stud & s);
     Stud & operator = (const Stud & s);
     Stud ( Stud&& s);
@@ -55,5 +56,13 @@ public:
     double getGalutinisSuMediana() const { return galutinisSuMediana; };
 
     // papildomos funkcijos
-    bool studentuPalyginimas(const Stud & s);
+    bool operator==(const Stud & s)const
+    {
+        if(vardas==s.vardas && pavarde==s.pavarde && egzaminas==s.egzaminas && nd==s.nd) return true;
+        else return false;
+    }
+    bool operator!=(const Stud & s)const{
+        if(vardas!=s.vardas || pavarde!=s.pavarde || egzaminas!=s.egzaminas || nd!=s.nd) return true;
+        else return false;
+    }
 };
