@@ -1,0 +1,25 @@
+var class_stud =
+[
+    [ "Stud", "class_stud.html#a97585839898d45dc9fc815d5b36e2b69", null ],
+    [ "Stud", "class_stud.html#a359ec8c4c0df98f961cc8730a7c7f152", null ],
+    [ "Stud", "class_stud.html#aed7226b44a998308c4b6b975888c65d4", null ],
+    [ "Stud", "class_stud.html#a7115844e12dadad25b9ff2de597f9eac", null ],
+    [ "Stud", "class_stud.html#abc3e8f7b31dfc940426614367f2582e9", null ],
+    [ "~Stud", "class_stud.html#aa1c38d670d1f269ebd48588c40ad58db", null ],
+    [ "getEgzaminas", "class_stud.html#a2db99f1caa5b0a4b7d4b08bbd5728c51", null ],
+    [ "getGalutinisSuMediana", "class_stud.html#a43f43f9b1b96c93058c139f64d8b6fdc", null ],
+    [ "getGalutinisSuVidurkiu", "class_stud.html#afb2ffe3ab4c110357771391783ca8bc0", null ],
+    [ "getND", "class_stud.html#a848751e6e349f5160c388f935533f817", null ],
+    [ "getPazymys", "class_stud.html#a362aae3e85f0908bb5e78fa3105a661d", null ],
+    [ "operator!=", "class_stud.html#a658cbf822711040e09770a04db45a18b", null ],
+    [ "operator=", "class_stud.html#a94d010cba4832e52eea069005bf7db04", null ],
+    [ "operator=", "class_stud.html#a5b1c20e83052bdeca49f425fb2d5770f", null ],
+    [ "operator==", "class_stud.html#aedfd6c20348a569cb12fc27de2a289f3", null ],
+    [ "setEgzaminas", "class_stud.html#abca3228eb2ec9403f9576c020966e855", null ],
+    [ "setGalutinisSuMediana", "class_stud.html#a8d51b98deb5a7530b2b7a2eea692e0d0", null ],
+    [ "setGalutinisSuVidurkiu", "class_stud.html#ae4a16a31791b64254cd575cb82438848", null ],
+    [ "setND", "class_stud.html#abd37a438ae60899de49ccb457df0612f", null ],
+    [ "setPazymys", "class_stud.html#a80f9a9931caa614b6168db8dcbf30cf5", null ],
+    [ "operator<<", "class_stud.html#a926dbb13464b6cd782c1133b255bf77e", null ],
+    [ "operator>>", "class_stud.html#a29cdbc2166e43edd3447bb7ad15d874e", null ]
+];

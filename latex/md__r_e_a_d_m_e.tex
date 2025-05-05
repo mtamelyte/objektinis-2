@@ -1,0 +1,226 @@
+\chapter{README}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{README@{README}}
+Programa leidžia įvesti arba sugeneruoti studentų duomenis bei pažymius, apskaičiuoti jų galutinius pažymius su vidurkiu arba mediana pasirinktinai, taip pat suskirstyti juos į du konteinerius, "{}protingi"{} ir "{}neprotingi"{}, pagal vidurkį.\hypertarget{md__r_e_a_d_m_e_autotoc_md0}{}\doxysection{\texorpdfstring{Programos paleidimo instrukcija\+:}{Programos paleidimo instrukcija\+:}}\label{md__r_e_a_d_m_e_autotoc_md0}
+
+\begin{DoxyEnumerate}
+\item Kompiuteryje susiinstaliuoti \href{https://gnuwin32.sourceforge.net/packages/make.htm}{\texttt{ make}}
+\item Parsisiųsti relizą ir unzippinti parsisiųstus failus
+\item Per komandinę eilutę nunaviguoti į relizo direktoriją ir įvesti "{}make run"{}
+\end{DoxyEnumerate}
+
+Paleidus programą naudotojui parodomas meniu su 7 pasirinkimais\+:
+
+1 -\/ Suvesti duomenis ranka \+: Leidžia suvesti tiek studentų vardus, tiek pažymius ranka
+
+2 -\/ Sugeneruoti pažymius\+: Leidžia įvesti studentų vardus, o pažymius programa sugeneruoja atsitiktinai
+
+3 -\/ Sugeneruoti pažymius, vardus ir pavardes\+: Programa sugeneruoja tiek studentų vardus, tiek pažymius
+
+4 -\/ Nuskaityti duomenis iš failo\+: Studentų duomenys yra nuskaitomi iš pasirinkto failo
+
+5 -\/ Testuoti kodą ir išvesti 3 laikų vidurkį\+: Nuskaito pasirinktą studentų failą ir parodo, kiek laiko užtruko tai padaryti
+
+6 -\/ Tirti funkcijas\+: suteikia galimybę atlikti du tyrimus\+: pirmas tyrimas sugeneruoja kelis skirtingų dydžių studentų failus ir parodo generavimo trukmę, o antras tyrimas perskaito sugeneruotus studentų failus ir ištiria jų nuskaitymo bei išskirstymo į protingus ir neprotingus studentus pagal pažymį spartą
+
+7 -\/ Tirti konstruktorius\+: Ištestuoja visų studentų klasės konstruktorių ir perkrautų operatorių veikimą
+
+8 -\/ Baigti darbą\+: Išjungia programą\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{v1.\+5}{v1.\+5}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Programoje pridėta Žmogaus klasė, kurioje saugomas tik žmogaus vardas ir pavardė, o Studentų klasė sukurta jos pagrindu, taigi turi Žmogaus vardą ir pavardę, tačiau papildomai dar turi namų darbų ir egzamino pažymius. Visi ankstesni Studentų klasės metodai toliau su ja veikia taip pat, kaip ir anksčiau.
+
+Taip pat Žmogaus klasė yra abstrakti, taigi jos tipo objektų sukurti negalima.
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{v1.\+2}{v1.\+2}}\label{md__r_e_a_d_m_e_autotoc_md2}
+Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti naujus objektus kopijuojant ar perkeliant senus. Taip pat yra perkrauti įvesties ir išvesties operatoriai -\/ įvesties operatorius pritaikomas nuskaitant studentų duomenis iš failo, o išvesties operatorius pritaikomas išvedant studento vardą ir balą tiek į terminalą, tiek į failą.
+
+Tiek konstruktoriai, tiek perkrauti operatoriai yra testuojami naujoje meniu funkcijoje, kuri gražina teiginius apie sėkmingą testavimą.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Programos testavimas naudojant 6 funkciją\+:}{Programos testavimas naudojant 6 funkciją\+:}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Prieš pirmą kartą atliekant antrą tyrimą, privaloma bent kartą atlikti pirmą, kad būtų sugeneruoti failai, su kuriais būtų galima atlikti antrą tyrimą.
+
+Testavimui naudojamo kompiuterio specifikacijos\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Procesorius   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Intel(\+R) Core(\+TM) Ultra 7 155H    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Procesorius   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Intel(\+R) Core(\+TM) Ultra 7 155H    }\\\cline{1-2}
+\endhead
+HDD   &SSD    \\\cline{1-2}
+RAM   &SK Hynix 4GB x 8   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Klasės}{Klasės}}\label{md__r_e_a_d_m_e_autotoc_md4}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimizavimo vėliavėlė   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ .exe failo dydis    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimizavimo vėliavėlė   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ .exe failo dydis    }\\\cline{1-4}
+\endhead
+Jokios   &1.\+12708 s.   &8.\+48943 s.   &809 KB    \\\cline{1-4}
+-\/O1   &0.\+708478 s.   &5.\+06565 s.   &537 KB    \\\cline{1-4}
+-\/O2   &0.\+693832 s.   &4.\+76938 s.   &483 KB    \\\cline{1-4}
+-\/O3   &0.\+669088 s.   &4.\+57423 s.   &479 KB   \\\cline{1-4}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{Struktūros}{Struktūros}}\label{md__r_e_a_d_m_e_autotoc_md5}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimizavimo vėliavėlė   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ .exe failo dydis    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Optimizavimo vėliavėlė   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 100 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Greitis su 1 000 000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ .exe failo dydis    }\\\cline{1-4}
+\endhead
+Jokios   &0.\+705166 s.   &5.\+59301 s.   &636 KB    \\\cline{1-4}
+-\/O1   &0.\+530952 s.   &3.\+37178 s.   &457 KB    \\\cline{1-4}
+-\/O2   &0.\+451381 s.   &3.\+50529 s.   &437 KB    \\\cline{1-4}
+-\/O3   &0.\+498676 s.   &3.\+5854 s.   &442 KB   \\\cline{1-4}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Tyrimas su vektoriais\+:}{Tyrimas su vektoriais\+:}}\label{md__r_e_a_d_m_e_autotoc_md6}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pirma strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Antra strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Trečia strategija    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pirma strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Antra strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Trečia strategija    }\\\cline{1-4}
+\endhead
+1000   &0.\+0346398 s.   &0.\+0321874 s.   &0.\+0271154 s.    \\\cline{1-4}
+10000   &0.\+0588841 s.   &0.\+0484614 s.   &0.\+0532457 s.    \\\cline{1-4}
+100000   &0.\+75594 s.   &0.\+729521 s.   &0.\+72437 s.    \\\cline{1-4}
+1000000   &5.\+16762 s.   &4.\+71562 s.   &4.\+56433 s.    \\\cline{1-4}
+10000000   &44.\+4975 s.   &41.\+9814 s.   &40.\+5489 s.   \\\cline{1-4}
+\end{longtabu}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysection{\texorpdfstring{Tyrimas su sąrašais\+:}{Tyrimas su sąrašais\+:}}\label{md__r_e_a_d_m_e_autotoc_md7}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pirma strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Antra strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Trečia strategija    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pirma strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Antra strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Trečia strategija    }\\\cline{1-4}
+\endhead
+1000   &0.\+0360853 s.   &0.\+0349864 s.   &0.\+0335232 s.    \\\cline{1-4}
+10000   &0.\+0414789 s.   &0.\+0462905 s.   &0.\+0493538 s.    \\\cline{1-4}
+100000   &0.\+769735 s.   &0.\+675944 s.   &0.\+717202 s.    \\\cline{1-4}
+1000000   &5.\+61882 s.   &5.\+16409 s.   &6.\+04569 s.    \\\cline{1-4}
+10000000   &48.\+6259 s.   &47.\+7247 s.   &53.\+2475 s.   \\\cline{1-4}
+\end{longtabu}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Tyrimas su dėklais\+:}{Tyrimas su dėklais\+:}}\label{md__r_e_a_d_m_e_autotoc_md8}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pirma strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Antra strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Trečia strategija    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Pirma strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Antra strategija   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Trečia strategija    }\\\cline{1-4}
+\endhead
+1000   &0.\+0351316 s.   &0.\+0222539 s.   &0.\+0299696 s.    \\\cline{1-4}
+10000   &0.\+072327 s.   &0.\+0456836 s.   &0.\+0608322 s.    \\\cline{1-4}
+100000   &0.\+835998 s.   &0.\+772752 s.   &0.\+718334 s.    \\\cline{1-4}
+1000000   &6.\+35227 s.   &5.\+51153 s.   &5.\+34346 s.    \\\cline{1-4}
+10000000   &52.\+4223 s.   &46.\+8919 s.   &47.\+6157 s.   \\\cline{1-4}
+\end{longtabu}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
