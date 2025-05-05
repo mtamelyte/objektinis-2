@@ -368,6 +368,7 @@ int galutinioBaloPasirinkimas()
 
 double vidurkis(vector <int> nd)
 {
+    if (nd.size()==0) return 0;
     double suma = 0;
     for (int i : nd)
     {
@@ -378,6 +379,7 @@ double vidurkis(vector <int> nd)
 
 double mediana(vector <int> nd)
 {
+    if(nd.size()==0) return 0;
     int dydis;
     sort(nd.begin(), nd.end());
     dydis = nd.size();

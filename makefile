@@ -15,4 +15,4 @@ run: main
 	./main.exe
 
 clean: 
-	del *.o main.exe
+	del *.o main.exe testai.exe
