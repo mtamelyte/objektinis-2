@@ -57,3 +57,11 @@ TEST_CASE("Testuojamas destruktorius", "[Destructor]"){
     REQUIRE(studentas->getND().empty());
     operator delete(studentas);
 }
+
+TEST_CASE("Testuojami getteriai", "[Getter]"){
+    Stud s;
+    s.setVardas("Monika");
+    s.setPavarde("Tamelyte");
+    REQUIRE(s.getVardas()=="Monika");
+    REQUIRE(s.getPavarde()=="Tamelyte");
+}
