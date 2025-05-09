@@ -1,8 +1,8 @@
 #define CATCH_CONFIG_MAIN
 
-#include "catch.hpp"
-#include "../headers/klase.h"
-#include "../headers/mano_lib.h"
+#include "catch2/catch.hpp"
+#include "headers/klase.h"
+#include "headers/mano_lib.h"
 
 TEST_CASE("Testuojamas konstruktorius", "[Constructor]"){
     Stud s1, s2;
