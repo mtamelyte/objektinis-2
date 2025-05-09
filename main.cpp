@@ -17,8 +17,7 @@ int main()
             cout << "4 - Nuskaityti duomenis iš failo" << endl;
             cout << "5 - Testuoti kodą ir išvesti 3 laikų vidurkį" << endl;
             cout << "6 - Tirti funkcijas" << endl;
-            cout << "7 - Tirti konstruktorius" << endl;
-            cout << "8 - Baigti darbą" << endl;
+            cout << "7 - Baigti darbą" << endl;
             cin >> meniuPasirinkimas;
             if (cin.fail())
             {
@@ -26,7 +25,7 @@ int main()
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 throw "Įvedėte ne skaičių!";
             }
-            else if (meniuPasirinkimas < 1 || meniuPasirinkimas > 8)
+            else if (meniuPasirinkimas < 1 || meniuPasirinkimas > 7)
                 throw "Įvedėte netinkamą skaičių!";
             else
                 break;
@@ -123,18 +122,6 @@ int main()
     }
     break;
     case 7:
-    {
-        constructorTestas();
-        copyConstructorTestas();
-        copyAssignmentTestas();
-        moveConstructorTestas();
-        moveAssignmentTestas();
-        ivestiesTestas();
-        isvestiesTestas();
-        destruktoriausTestas();
-    }
-    break;
-    case 8:
     {
         return 0;
         break;
