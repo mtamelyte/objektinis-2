@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['6_20funkciją_3a_0',['Programos testavimas naudojant 6 funkciją:',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
+  ['5_0',['v1.5',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]]
 ];

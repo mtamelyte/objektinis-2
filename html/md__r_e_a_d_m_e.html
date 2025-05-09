@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Studentu pazymiu skaiciavimo programa: README</title>
+<title>Studentų pažymių skaičiavimo programa: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Studentu pazymiu skaiciavimo programa
+   <div id="projectname">Studentų pažymių skaičiavimo programa
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,6 +112,7 @@ Programos paleidimo instrukcija:</h1>
 <li>Kompiuteryje susiinstaliuoti <a href="https://gnuwin32.sourceforge.net/packages/make.htm">make</a></li>
 <li>Parsisiųsti relizą ir unzippinti parsisiųstus failus</li>
 <li>Per komandinę eilutę nunaviguoti į relizo direktoriją ir įvesti "make run"</li>
+<li>Norint paleisti programos testavimą - vietoj "make run" įvesti "make testai"</li>
 </ol>
 <p>Paleidus programą naudotojui parodomas meniu su 7 pasirinkimais:</p>
 <p>1 - Suvesti duomenis ranka : Leidžia suvesti tiek studentų vardus, tiek pažymius ranka</p>
@@ -120,18 +121,20 @@ Programos paleidimo instrukcija:</h1>
 <p>4 - Nuskaityti duomenis iš failo: Studentų duomenys yra nuskaitomi iš pasirinkto failo</p>
 <p>5 - Testuoti kodą ir išvesti 3 laikų vidurkį: Nuskaito pasirinktą studentų failą ir parodo, kiek laiko užtruko tai padaryti</p>
 <p>6 - Tirti funkcijas: suteikia galimybę atlikti du tyrimus: pirmas tyrimas sugeneruoja kelis skirtingų dydžių studentų failus ir parodo generavimo trukmę, o antras tyrimas perskaito sugeneruotus studentų failus ir ištiria jų nuskaitymo bei išskirstymo į protingus ir neprotingus studentus pagal pažymį spartą</p>
-<p>7 - Tirti konstruktorius: Ištestuoja visų studentų klasės konstruktorių ir perkrautų operatorių veikimą</p>
-<p>8 - Baigti darbą: Išjungia programą</p>
+<p>7 - Baigti darbą: Išjungia programą</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+v2.0</h1>
+<p>Prie programos pridėta Doxygen sugeneruota dokumentacija, išsamiai aprašanti visus programos komponentus. Taip pat implementuotas unit testing, testuojantis rule of five, taip pat get'erius ir set'erius.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
 v1.5</h1>
 <p>Programoje pridėta Žmogaus klasė, kurioje saugomas tik žmogaus vardas ir pavardė, o Studentų klasė sukurta jos pagrindu, taigi turi Žmogaus vardą ir pavardę, tačiau papildomai dar turi namų darbų ir egzamino pažymius. Visi ankstesni Studentų klasės metodai toliau su ja veikia taip pat, kaip ir anksčiau.</p>
 <p>Taip pat Žmogaus klasė yra abstrakti, taigi jos tipo objektų sukurti negalima.</p>
 <p><img src="https://github.com/user-attachments/assets/8d9d7c51-8cdd-4c00-85c0-b40ff3661fd3" alt="Screenshot 2025-04-23 135004" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 v1.2</h1>
 <p>Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti naujus objektus kopijuojant ar perkeliant senus. Taip pat yra perkrauti įvesties ir išvesties operatoriai - įvesties operatorius pritaikomas nuskaitant studentų duomenis iš failo, o išvesties operatorius pritaikomas išvedant studento vardą ir balą tiek į terminalą, tiek į failą.</p>
 <p>Tiek konstruktoriai, tiek perkrauti operatoriai yra testuojami naujoje meniu funkcijoje, kuri gražina teiginius apie sėkmingą testavimą.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Programos testavimas naudojant 6 funkciją:</h1>
 <p>Prieš pirmą kartą atliekant antrą tyrimą, privaloma bent kartą atlikti pirmą, kad būtų sugeneruoti failai, su kuriais būtų galima atlikti antrą tyrimą.</p>
 <p>Testavimui naudojamo kompiuterio specifikacijos:</p>
@@ -143,7 +146,7 @@ Programos testavimas naudojant 6 funkciją:</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">RAM   </td><td class="markdownTableBodyNone">SK Hynix 4GB x 8   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Klasės</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -157,7 +160,7 @@ Klasės</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">-O3   </td><td class="markdownTableBodyNone">0.669088 s.   </td><td class="markdownTableBodyNone">4.57423 s.   </td><td class="markdownTableBodyNone">479 KB   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Struktūros</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -171,7 +174,7 @@ Struktūros</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">-O3   </td><td class="markdownTableBodyNone">0.498676 s.   </td><td class="markdownTableBodyNone">3.5854 s.   </td><td class="markdownTableBodyNone">442 KB   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Tyrimas su vektoriais:</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -202,7 +205,7 @@ Tyrimas su vektoriais:</h1>
 <p><img src="https://github.com/user-attachments/assets/876b4542-b728-4cef-985e-cd0fd56d730c" alt="Screenshot 2025-03-19 181418" class="inline"/></p>
 <p><img src="https://github.com/user-attachments/assets/76a0548e-94b1-477d-9faa-c65f5ca2ee9c" alt="Screenshot 2025-03-19 181424" class="inline"/></p>
 <p><img src="https://github.com/user-attachments/assets/3814e0cc-1c6c-4878-84b1-2f26991fd1db" alt="Screenshot 2025-03-19 181433" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Tyrimas su sąrašais:</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -233,7 +236,7 @@ Tyrimas su sąrašais:</h1>
 <p><img src="https://github.com/user-attachments/assets/26648068-b282-4025-af63-4f5e70f9c6d3" alt="Screenshot 2025-03-19 190143" class="inline"/></p>
 <p><img src="https://github.com/user-attachments/assets/912f45ff-6fdd-46f5-b7dd-81009ad090db" alt="Screenshot 2025-03-19 190149" class="inline"/></p>
 <p><img src="https://github.com/user-attachments/assets/933cd70b-d6e7-4458-b616-7d8bbcb92fe7" alt="Screenshot 2025-03-19 190155" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Tyrimas su dėklais:</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['antrastesbetemplates_2eh_0',['antrastesBeTemplates.h',['../antrastes_be_templates_8h.html',1,'']]],
-  ['antrastessutemplates_2eh_1',['antrastesSuTemplates.h',['../antrastes_su_templates_8h.html',1,'']]],
-  ['antrastrategija_2',['antraStrategija',['../antrastes_su_templates_8h.html#a94d56e68b3c19c595f9747c8c385818f',1,'antrastesSuTemplates.h']]]
+  ['6_20funkciją_3a_0',['Programos testavimas naudojant 6 funkciją:',['../md__r_e_a_d_m_e.html#autotoc_md4',1,'']]]
 ];

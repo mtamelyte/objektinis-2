@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['failogeneravimas_0',['failoGeneravimas',['../funkcijos_8cpp.html#ab2fa612f382ab2aeea0b8173ff6792eb',1,'failoGeneravimas(int failoIlgis):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#ab2fa612f382ab2aeea0b8173ff6792eb',1,'failoGeneravimas(int failoIlgis):&#160;funkcijos.cpp']]],
-  ['failopasirinkimas_1',['failoPasirinkimas',['../funkcijos_8cpp.html#abfdc87a94a3722d214f09e1ae437971d',1,'failoPasirinkimas(string klausimas):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#abfdc87a94a3722d214f09e1ae437971d',1,'failoPasirinkimas(string klausimas):&#160;funkcijos.cpp']]]
+  ['isvedimas_0',['isvedimas',['../antrastes_su_templates_8h.html#ac26edaaf3a283b820256536a0279c76e',1,'antrastesSuTemplates.h']]],
+  ['ivedimas_1',['ivedimas',['../antrastes_su_templates_8h.html#a131280a270661df474e1e615a01fc98c',1,'antrastesSuTemplates.h']]]
 ];

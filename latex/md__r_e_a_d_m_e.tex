@@ -6,6 +6,7 @@ Programa leidžia įvesti arba sugeneruoti studentų duomenis bei pažymius, aps
 \item Kompiuteryje susiinstaliuoti \href{https://gnuwin32.sourceforge.net/packages/make.htm}{\texttt{ make}}
 \item Parsisiųsti relizą ir unzippinti parsisiųstus failus
 \item Per komandinę eilutę nunaviguoti į relizo direktoriją ir įvesti "{}make run"{}
+\item Norint paleisti programos testavimą -\/ vietoj "{}make run"{} įvesti "{}make testai"{}
 \end{DoxyEnumerate}
 
 Paleidus programą naudotojui parodomas meniu su 7 pasirinkimais\+:
@@ -22,17 +23,16 @@ Paleidus programą naudotojui parodomas meniu su 7 pasirinkimais\+:
 
 6 -\/ Tirti funkcijas\+: suteikia galimybę atlikti du tyrimus\+: pirmas tyrimas sugeneruoja kelis skirtingų dydžių studentų failus ir parodo generavimo trukmę, o antras tyrimas perskaito sugeneruotus studentų failus ir ištiria jų nuskaitymo bei išskirstymo į protingus ir neprotingus studentus pagal pažymį spartą
 
-7 -\/ Tirti konstruktorius\+: Ištestuoja visų studentų klasės konstruktorių ir perkrautų operatorių veikimą
-
-8 -\/ Baigti darbą\+: Išjungia programą\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{v1.\+5}{v1.\+5}}\label{md__r_e_a_d_m_e_autotoc_md1}
+7 -\/ Baigti darbą\+: Išjungia programą\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{v2.\+0}{v2.\+0}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Prie programos pridėta Doxygen sugeneruota dokumentacija, išsamiai aprašanti visus programos komponentus. Taip pat implementuotas unit testing, testuojantis rule of five, taip pat get\textquotesingle{}erius ir set\textquotesingle{}erius.\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{v1.\+5}{v1.\+5}}\label{md__r_e_a_d_m_e_autotoc_md2}
 Programoje pridėta Žmogaus klasė, kurioje saugomas tik žmogaus vardas ir pavardė, o Studentų klasė sukurta jos pagrindu, taigi turi Žmogaus vardą ir pavardę, tačiau papildomai dar turi namų darbų ir egzamino pažymius. Visi ankstesni Studentų klasės metodai toliau su ja veikia taip pat, kaip ir anksčiau.
 
 Taip pat Žmogaus klasė yra abstrakti, taigi jos tipo objektų sukurti negalima.
 
-\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{v1.\+2}{v1.\+2}}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{v1.\+2}{v1.\+2}}\label{md__r_e_a_d_m_e_autotoc_md3}
 Studentų klasei pridėti rule of five konstruktoriai, kurie leidžia sukurti naujus objektus kopijuojant ar perkeliant senus. Taip pat yra perkrauti įvesties ir išvesties operatoriai -\/ įvesties operatorius pritaikomas nuskaitant studentų duomenis iš failo, o išvesties operatorius pritaikomas išvedant studento vardą ir balą tiek į terminalą, tiek į failą.
 
-Tiek konstruktoriai, tiek perkrauti operatoriai yra testuojami naujoje meniu funkcijoje, kuri gražina teiginius apie sėkmingą testavimą.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Programos testavimas naudojant 6 funkciją\+:}{Programos testavimas naudojant 6 funkciją\+:}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Tiek konstruktoriai, tiek perkrauti operatoriai yra testuojami naujoje meniu funkcijoje, kuri gražina teiginius apie sėkmingą testavimą.\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Programos testavimas naudojant 6 funkciją\+:}{Programos testavimas naudojant 6 funkciją\+:}}\label{md__r_e_a_d_m_e_autotoc_md4}
 Prieš pirmą kartą atliekant antrą tyrimą, privaloma bent kartą atlikti pirmą, kad būtų sugeneruoti failai, su kuriais būtų galima atlikti antrą tyrimą.
 
 Testavimui naudojamo kompiuterio specifikacijos\+:
@@ -50,7 +50,7 @@ Testavimui naudojamo kompiuterio specifikacijos\+:
 HDD   &SSD    \\\cline{1-2}
 RAM   &SK Hynix 4GB x 8   \\\cline{1-2}
 \end{longtabu}
-\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Klasės}{Klasės}}\label{md__r_e_a_d_m_e_autotoc_md4}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{Klasės}{Klasės}}\label{md__r_e_a_d_m_e_autotoc_md5}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
 \hline
@@ -66,7 +66,7 @@ Jokios   &1.\+12708 s.   &8.\+48943 s.   &809 KB    \\\cline{1-4}
 -\/O2   &0.\+693832 s.   &4.\+76938 s.   &483 KB    \\\cline{1-4}
 -\/O3   &0.\+669088 s.   &4.\+57423 s.   &479 KB   \\\cline{1-4}
 \end{longtabu}
-\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{Struktūros}{Struktūros}}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Struktūros}{Struktūros}}\label{md__r_e_a_d_m_e_autotoc_md6}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
 \hline
@@ -82,7 +82,7 @@ Jokios   &0.\+705166 s.   &5.\+59301 s.   &636 KB    \\\cline{1-4}
 -\/O2   &0.\+451381 s.   &3.\+50529 s.   &437 KB    \\\cline{1-4}
 -\/O3   &0.\+498676 s.   &3.\+5854 s.   &442 KB   \\\cline{1-4}
 \end{longtabu}
-\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Tyrimas su vektoriais\+:}{Tyrimas su vektoriais\+:}}\label{md__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysection{\texorpdfstring{Tyrimas su vektoriais\+:}{Tyrimas su vektoriais\+:}}\label{md__r_e_a_d_m_e_autotoc_md7}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
 \hline
@@ -129,7 +129,7 @@ Jokios   &0.\+705166 s.   &5.\+59301 s.   &636 KB    \\\cline{1-4}
 
 
 
-\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysection{\texorpdfstring{Tyrimas su sąrašais\+:}{Tyrimas su sąrašais\+:}}\label{md__r_e_a_d_m_e_autotoc_md7}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Tyrimas su sąrašais\+:}{Tyrimas su sąrašais\+:}}\label{md__r_e_a_d_m_e_autotoc_md8}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
 \hline
@@ -176,7 +176,7 @@ Jokios   &0.\+705166 s.   &5.\+59301 s.   &636 KB    \\\cline{1-4}
 
 
 
-\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Tyrimas su dėklais\+:}{Tyrimas su dėklais\+:}}\label{md__r_e_a_d_m_e_autotoc_md8}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysection{\texorpdfstring{Tyrimas su dėklais\+:}{Tyrimas su dėklais\+:}}\label{md__r_e_a_d_m_e_autotoc_md9}
 \tabulinesep=1mm
 \begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
 \hline

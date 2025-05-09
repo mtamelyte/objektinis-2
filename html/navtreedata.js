@@ -24,17 +24,18 @@
 */
 var NAVTREE =
 [
-  [ "Studentu pazymiu skaiciavimo programa", "index.html", [
+  [ "Studentų pažymių skaičiavimo programa", "index.html", [
     [ "README", "md__r_e_a_d_m_e.html", [
       [ "Programos paleidimo instrukcija:", "md__r_e_a_d_m_e.html#autotoc_md0", null ],
-      [ "v1.5", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "v1.2", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Programos testavimas naudojant 6 funkciją:", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
-      [ "Klasės", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "Struktūros", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
-      [ "Tyrimas su vektoriais:", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
-      [ "Tyrimas su sąrašais:", "md__r_e_a_d_m_e.html#autotoc_md7", null ],
-      [ "Tyrimas su dėklais:", "md__r_e_a_d_m_e.html#autotoc_md8", null ]
+      [ "v2.0", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "v1.5", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "v1.2", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Programos testavimas naudojant 6 funkciją:", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "Klasės", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "Struktūros", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "Tyrimas su vektoriais:", "md__r_e_a_d_m_e.html#autotoc_md7", null ],
+      [ "Tyrimas su sąrašais:", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
+      [ "Tyrimas su dėklais:", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

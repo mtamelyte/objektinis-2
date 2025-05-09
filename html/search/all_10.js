@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['test_5fcase_0',['TEST_CASE',['../testai_8cpp.html#a7ca7bdfb343444a8b475c53b24ffc961',1,'TEST_CASE(&quot;Testuojamas konstruktorius&quot;, &quot;[Constructor]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#a7b6008d15bfbbec3bfa3703f5d7cf1d3',1,'TEST_CASE(&quot;Testuojamas kopijavimo konstruktorius&quot;, &quot;[Copy][constructor]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#afa6c6f66b37ce5263deb5f549841b62c',1,'TEST_CASE(&quot;Testuojamas kopijavimo priskyrimo operatorius&quot;, &quot;[Copy][assignment][operator]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#ad96458ca23002006e69bb50c21250cf3',1,'TEST_CASE(&quot;Testuojamas move konstruktorius&quot;, &quot;[Move][constructor]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#a194ce3e82de59c092a31ba7cc523f2bd',1,'TEST_CASE(&quot;Testuojamas move priskyrimo operatorius&quot;, &quot;[Move][assignment][operator]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#ae81ed1a67e3b9330f46cf93b2babed68',1,'TEST_CASE(&quot;Testuojamas ivedimo operatorius&quot;, &quot;[Input][operator]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#a39ccab0b23aee405f74f4d3a95f00056',1,'TEST_CASE(&quot;Testuojamas isvedimo operatorius&quot;, &quot;[Output][operator]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#a611cd236f9131d9a34ee24b57dfe80c1',1,'TEST_CASE(&quot;Testuojamas destruktorius&quot;, &quot;[Destructor]&quot;):&#160;testai.cpp'],['../testai_8cpp.html#a7cea6d95c671006b082f0568a727595b',1,'TEST_CASE(&quot;Testuojami getteriai&quot;, &quot;[Getter]&quot;):&#160;testai.cpp']]],
-  ['testai_2ecpp_1',['testai.cpp',['../testai_8cpp.html',1,'']]],
-  ['testas_2',['testas',['../funkcijos_8cpp.html#a0361196a930304c14fdded154ccef28a',1,'testas(string failoPavadinimas):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a0361196a930304c14fdded154ccef28a',1,'testas(string failoPavadinimas):&#160;funkcijos.cpp']]],
-  ['testavimas_20naudojant_206_20funkciją_3a_3',['Programos testavimas naudojant 6 funkciją:',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]],
-  ['treciastrategija_4',['treciaStrategija',['../antrastes_su_templates_8h.html#a40de4a089710bb0e57c36fd4a9da4af4',1,'antrastesSuTemplates.h']]],
-  ['tyrimas_5',['tyrimas',['../antrastes_su_templates_8h.html#ae1752e43e49da6d9a9ea44b94f6a1529',1,'antrastesSuTemplates.h']]],
-  ['tyrimas_20su_20dėklais_3a_6',['Tyrimas su dėklais:',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]],
-  ['tyrimas_20su_20sąrašais_3a_7',['Tyrimas su sąrašais:',['../md__r_e_a_d_m_e.html#autotoc_md7',1,'']]],
-  ['tyrimas_20su_20vektoriais_3a_8',['Tyrimas su vektoriais:',['../md__r_e_a_d_m_e.html#autotoc_md6',1,'']]]
+  ['sąrašais_3a_0',['Tyrimas su sąrašais:',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]],
+  ['setegzaminas_1',['setEgzaminas',['../class_stud.html#abca3228eb2ec9403f9576c020966e855',1,'Stud']]],
+  ['setgalutinissumediana_2',['setGalutinisSuMediana',['../class_stud.html#a8d51b98deb5a7530b2b7a2eea692e0d0',1,'Stud']]],
+  ['setgalutinissuvidurkiu_3',['setGalutinisSuVidurkiu',['../class_stud.html#ae4a16a31791b64254cd575cb82438848',1,'Stud']]],
+  ['setnd_4',['setND',['../class_stud.html#abd37a438ae60899de49ccb457df0612f',1,'Stud']]],
+  ['setpavarde_5',['setPavarde',['../class_zmogus.html#a21c1742c300263cee662fc83fbf7fdda',1,'Zmogus']]],
+  ['setpazymys_6',['setPazymys',['../class_stud.html#a80f9a9931caa614b6168db8dcbf30cf5',1,'Stud']]],
+  ['setvardas_7',['setVardas',['../class_zmogus.html#a904ab4a0484341d02bf8049c31500366',1,'Zmogus']]],
+  ['struktūros_8',['Struktūros',['../md__r_e_a_d_m_e.html#autotoc_md6',1,'']]],
+  ['stud_9',['Stud',['../class_stud.html',1,'Stud'],['../class_stud.html#a97585839898d45dc9fc815d5b36e2b69',1,'Stud::Stud()'],['../class_stud.html#a359ec8c4c0df98f961cc8730a7c7f152',1,'Stud::Stud(const string &amp;var, const string &amp;pav, const int &amp;egz, const vector&lt; int &gt; &amp;nd_)'],['../class_stud.html#aed7226b44a998308c4b6b975888c65d4',1,'Stud::Stud(const string &amp;var, const string &amp;pav, const int &amp;egz)'],['../class_stud.html#a7115844e12dadad25b9ff2de597f9eac',1,'Stud::Stud(const Stud &amp;s)'],['../class_stud.html#abc3e8f7b31dfc940426614367f2582e9',1,'Stud::Stud(Stud &amp;&amp;s)']]],
+  ['su_20dėklais_3a_10',['Tyrimas su dėklais:',['../md__r_e_a_d_m_e.html#autotoc_md9',1,'']]],
+  ['su_20sąrašais_3a_11',['Tyrimas su sąrašais:',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]],
+  ['su_20vektoriais_3a_12',['Tyrimas su vektoriais:',['../md__r_e_a_d_m_e.html#autotoc_md7',1,'']]]
 ];

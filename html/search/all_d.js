@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['pagalmediana_0',['pagalMediana',['../funkcijos_8cpp.html#af1f042b3da820a0b7ca2f693fe312459',1,'pagalMediana(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#af1f042b3da820a0b7ca2f693fe312459',1,'pagalMediana(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pagalpavarde_1',['pagalPavarde',['../funkcijos_8cpp.html#a406d31985a778aa8cf9bb43392e7e6a5',1,'pagalPavarde(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a406d31985a778aa8cf9bb43392e7e6a5',1,'pagalPavarde(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pagalvarda_2',['pagalVarda',['../funkcijos_8cpp.html#a38cd775cb41812af3d1c6366df9b4fd0',1,'pagalVarda(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a38cd775cb41812af3d1c6366df9b4fd0',1,'pagalVarda(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pagalvidurki_3',['pagalVidurki',['../funkcijos_8cpp.html#a164ea976b015bd628367019d3fcf21bf',1,'pagalVidurki(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a164ea976b015bd628367019d3fcf21bf',1,'pagalVidurki(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['paleidimo_20instrukcija_3a_4',['Programos paleidimo instrukcija:',['../md__r_e_a_d_m_e.html#autotoc_md0',1,'']]],
-  ['pavarde_5',['pavarde',['../class_zmogus.html#a00799e1396c82e4f6dffa0edec1f24e5',1,'Zmogus']]],
-  ['pazymiugeneravimas_6',['pazymiuGeneravimas',['../funkcijos_8cpp.html#ad60ed7211a05427af2f0c443b90846a8',1,'pazymiuGeneravimas(Stud &amp;laik):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#ad60ed7211a05427af2f0c443b90846a8',1,'pazymiuGeneravimas(Stud &amp;laik):&#160;funkcijos.cpp']]],
-  ['pazymiuivedimas_7',['pazymiuIvedimas',['../funkcijos_8cpp.html#ab22b1b98ed0f18b63d9b904b7ecc5c1f',1,'pazymiuIvedimas(Stud &amp;laik):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#ab22b1b98ed0f18b63d9b904b7ecc5c1f',1,'pazymiuIvedimas(Stud &amp;laik):&#160;funkcijos.cpp']]],
-  ['pirmastrategija_8',['pirmaStrategija',['../antrastes_su_templates_8h.html#afe2ac435d4d839f48d6c578a9a77b0bc',1,'antrastesSuTemplates.h']]],
-  ['programos_20paleidimo_20instrukcija_3a_9',['Programos paleidimo instrukcija:',['../md__r_e_a_d_m_e.html#autotoc_md0',1,'']]],
-  ['programos_20testavimas_20naudojant_206_20funkciją_3a_10',['Programos testavimas naudojant 6 funkciją:',['../md__r_e_a_d_m_e.html#autotoc_md3',1,'']]]
+  ['operator_21_3d_0',['operator!=',['../class_stud.html#a658cbf822711040e09770a04db45a18b',1,'Stud']]],
+  ['operator_3c_3c_1',['operator&lt;&lt;',['../class_stud.html#a926dbb13464b6cd782c1133b255bf77e',1,'Stud::operator&lt;&lt;()'],['../klase_8cpp.html#a926dbb13464b6cd782c1133b255bf77e',1,'operator&lt;&lt;():&#160;klase.cpp']]],
+  ['operator_3d_2',['operator=',['../class_zmogus.html#aaadf52c33ae575595a316a74e9fbbe9c',1,'Zmogus::operator=()'],['../class_stud.html#a94d010cba4832e52eea069005bf7db04',1,'Stud::operator=(const Stud &amp;s)'],['../class_stud.html#a5b1c20e83052bdeca49f425fb2d5770f',1,'Stud::operator=(Stud &amp;&amp;s)']]],
+  ['operator_3d_3d_3',['operator==',['../class_stud.html#aedfd6c20348a569cb12fc27de2a289f3',1,'Stud']]],
+  ['operator_3e_3e_4',['operator&gt;&gt;',['../class_stud.html#a29cdbc2166e43edd3447bb7ad15d874e',1,'Stud::operator&gt;&gt;()'],['../klase_8cpp.html#a29cdbc2166e43edd3447bb7ad15d874e',1,'operator&gt;&gt;():&#160;klase.cpp']]]
 ];

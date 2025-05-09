@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['pagalmediana_0',['pagalMediana',['../funkcijos_8cpp.html#af1f042b3da820a0b7ca2f693fe312459',1,'pagalMediana(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#af1f042b3da820a0b7ca2f693fe312459',1,'pagalMediana(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pagalpavarde_1',['pagalPavarde',['../funkcijos_8cpp.html#a406d31985a778aa8cf9bb43392e7e6a5',1,'pagalPavarde(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a406d31985a778aa8cf9bb43392e7e6a5',1,'pagalPavarde(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pagalvarda_2',['pagalVarda',['../funkcijos_8cpp.html#a38cd775cb41812af3d1c6366df9b4fd0',1,'pagalVarda(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a38cd775cb41812af3d1c6366df9b4fd0',1,'pagalVarda(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pagalvidurki_3',['pagalVidurki',['../funkcijos_8cpp.html#a164ea976b015bd628367019d3fcf21bf',1,'pagalVidurki(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#a164ea976b015bd628367019d3fcf21bf',1,'pagalVidurki(Stud &amp;a, Stud &amp;b):&#160;funkcijos.cpp']]],
-  ['pazymiugeneravimas_4',['pazymiuGeneravimas',['../funkcijos_8cpp.html#ad60ed7211a05427af2f0c443b90846a8',1,'pazymiuGeneravimas(Stud &amp;laik):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#ad60ed7211a05427af2f0c443b90846a8',1,'pazymiuGeneravimas(Stud &amp;laik):&#160;funkcijos.cpp']]],
-  ['pazymiuivedimas_5',['pazymiuIvedimas',['../funkcijos_8cpp.html#ab22b1b98ed0f18b63d9b904b7ecc5c1f',1,'pazymiuIvedimas(Stud &amp;laik):&#160;funkcijos.cpp'],['../antrastes_be_templates_8h.html#ab22b1b98ed0f18b63d9b904b7ecc5c1f',1,'pazymiuIvedimas(Stud &amp;laik):&#160;funkcijos.cpp']]],
-  ['pirmastrategija_6',['pirmaStrategija',['../antrastes_su_templates_8h.html#afe2ac435d4d839f48d6c578a9a77b0bc',1,'antrastesSuTemplates.h']]]
+  ['setegzaminas_0',['setEgzaminas',['../class_stud.html#abca3228eb2ec9403f9576c020966e855',1,'Stud']]],
+  ['setgalutinissumediana_1',['setGalutinisSuMediana',['../class_stud.html#a8d51b98deb5a7530b2b7a2eea692e0d0',1,'Stud']]],
+  ['setgalutinissuvidurkiu_2',['setGalutinisSuVidurkiu',['../class_stud.html#ae4a16a31791b64254cd575cb82438848',1,'Stud']]],
+  ['setnd_3',['setND',['../class_stud.html#abd37a438ae60899de49ccb457df0612f',1,'Stud']]],
+  ['setpavarde_4',['setPavarde',['../class_zmogus.html#a21c1742c300263cee662fc83fbf7fdda',1,'Zmogus']]],
+  ['setpazymys_5',['setPazymys',['../class_stud.html#a80f9a9931caa614b6168db8dcbf30cf5',1,'Stud']]],
+  ['setvardas_6',['setVardas',['../class_zmogus.html#a904ab4a0484341d02bf8049c31500366',1,'Zmogus']]],
+  ['stud_7',['Stud',['../class_stud.html#a97585839898d45dc9fc815d5b36e2b69',1,'Stud::Stud()'],['../class_stud.html#a359ec8c4c0df98f961cc8730a7c7f152',1,'Stud::Stud(const string &amp;var, const string &amp;pav, const int &amp;egz, const vector&lt; int &gt; &amp;nd_)'],['../class_stud.html#aed7226b44a998308c4b6b975888c65d4',1,'Stud::Stud(const string &amp;var, const string &amp;pav, const int &amp;egz)'],['../class_stud.html#a7115844e12dadad25b9ff2de597f9eac',1,'Stud::Stud(const Stud &amp;s)'],['../class_stud.html#abc3e8f7b31dfc940426614367f2582e9',1,'Stud::Stud(Stud &amp;&amp;s)']]]
 ];
